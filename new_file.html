@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简介</title>
+    <style>
+    #box{
+        width: 400px;
+        height: 300px;
+        background-color: #f8f0b8;
+    }
+    #box1{
+        margin-top: 30px;
+        margin-left: 50px;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+		<div id="box1">
+			<form name="form1">
+            <table>
+                <tr>
+                    <td>姓名：</td>
+                    <td><input type="text" size="16"></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input type="password" size="16"></td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td>
+                        <input type="radio" name="sex" value="m">男<input type="radio" name="sex" value="f">女
+                    </td>
+                </tr>
+                <tr>
+                    <td>血型：</td>
+                    <td>
+                        <input type="radio" name="xx" value="o">O<input type="radio" name="xx" value="a">A
+                        <input type="radio" name="xx" value="b">B<input type="radio" name="xx" value="ab">AB
+                    </td>
+                </tr>
+                <tr>
+                    <td>性格：</td>
+                    <td><input type="checkbox" name="vehicle" value="travel">热情大方
+                        <input type="checkbox" name="vehicle"value="climb">温柔体贴 
+                        <input type="checkbox" name="vehicle" value="exercise">多情善感
+                </tr>
+                <tr>
+                    <td>文件：</td>
+                    <td> <input type="file" value="浏览文件"> </td>
+                </tr>
+                <tr>
+                    <td>简介：</td>
+                    <td> <textarea style="overflow-y: scroll; resize: none;" rows="5" cols="20">自我介绍：</textarea> </td>
+                </tr>
+                <tr>
+                    <td>城市：</td>
+                    <td> <select name="study">
+                            <option value="1">广东</option>
+                            <option value="2">黑龙江</option>
+                            <option value="3">四川</option>
+                            <option value="4">深圳</option>
+                            <option value="5">贵州</option>
+							<option value="6">陕西</option>
+							<option value="7">云南</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="提交"> <input type="button" value="重置" onclick="form1.reset()"> </td>
+                </tr>
+            </table>
+        </from>
+    </div>
+</body>
+</html>
